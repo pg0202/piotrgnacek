@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piotr Gnacek Porfolio | Snapstop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<script src="https://kit.fontawesome.com/75e53e2b80.js" crossorigin="anonymous"></script>
+<body>
+<!-- Hi! Thank you for checking out my portfolio website! -->
+<div id="headerhj">
+     <!-- <video autoplay muted loop playsinline id="bg-video">
+        <source src="images/work/snapstop/trailer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>    -->
+
+    <!-- <div class="gradient-overlay"></div>  -->
+
+    <div class="container">
+        <!--NAV BAR -->     
+        <nav>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <H1>PIOTR GNACEK</H1>
+            <ul id="sidemenu">
+                <li><a href="index.html#header">Home</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>                
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <!-- <div class="header-text">
+            <p>Solo Project</p>
+            <h1>Snapstop</h1>
+        </div> -->
+    </div>
+</div>
+<!-- ABOUT -->
+<div id="about" style="background-image: none">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/work/snapstop/snapstop-cover.png">
+                <a href="https://waterlemon0.itch.io/snapstop" class="btn"><i class="fa-brands fa-itch-io"></i> PLAY HERE</a>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Snapstop</h1>
+                <p>Snapstop is a first person puzzle game where you solve puzzles with the help of a camera that can pause objects in time. 
+                    Pause doors, buttons and physics objects in order to solve puzzles..</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('info')">Info</p>
+                    <p class="tab-links" onclick="opentab('media')">Media</p>
+                    <p class="tab-links" onclick="opentab('goals')">Goals & Targets</p>
+                    <p class="tab-links" onclick="opentab('outcomes')">Learning Outcomes</p>
+                </div>
+                <!-- Info --> 
+                <div class="tab-contents active-tab" id="info">
+                    <ul>
+                        <li><span><i class="fa-solid fa-user"></i> Role</span><br>Solo Developer</li>
+                        <li><span><i class="fa-solid fa-users"></i> Team Size</span><br>1</li>
+                        <li><span><i class="fa-solid fa-clock"></i> Timeframe</span><br>One Month</li>
+                        <li><span><i class="fa-solid fa-screwdriver-wrench"></i> Sotftware Used</span><br>Unreal Engine 5.4 (Blueprints + C++), Blender</li>
+                    </ul>
+                </div>
+                <!-- Media --> 
+                <div class="tab-contents" id="media">
+                    <ul>
+                        <li><span>Trailer</span><br>Personal Projects</li>
+                        <video playsinline controls id="media-video">
+                            <source src="images/work/snapstop/trailer.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>   
+                        <li><span>2021 - Current</span><br>Personal Projects</li>
+                    </ul>
+                </div>
+                <!-- Goals --> 
+                <div class="tab-contents" id="goals">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Personal Projects</li>
+                        <li><span>2019 - 2021</span><br>Fortnite ChugJug manufacuturer</li>
+                        <li><span>2016 - 2017</span><br>Gooning my fucking balls off</li>
+                    </ul>
+                </div>
+                <!-- Outcomes --> 
+                <div class="tab-contents" id="outcomes">
+                    <ul>
+                        <li><span>Time Management</span><br>Created the initial vertical slice within 1 month</li>
+                        <li><span>Animation Blueprints</span><br>Learned how to set up animation blueprints to animate first person meshes</li>
+                        <li><span>Options Menu</span><br>Learned how to create scalable widgets to easily make Setting/Options menus. Utilised C++ to properly save settings</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- SERVICES --> 
+ <div id="contributions">
+    <div class="container">
+        <h1 class="sub-title">My Contributions</h1>
+        <div class="contributions-list">
+            <div>
+                <i class="fa-solid fa-file-code"></i>
+                <h2> Pause Mechanic</h2>
+                <p>Created pause mechanic using Blueprints</p>
+                <div class="iframe-wrapper">
+                    <iframe src="https://blueprintue.com/render/jei2uabg/" scrolling="no" allowfullscreen></iframe>                   
+                </div>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-palette"></i>
+                <h2>Art</h2>
+                <p>did artp</p>
+                <div class="iframe-wrapper">
+                    <iframe src="https://blueprintue.com/render/hvwqwcll/" scrolling="no" allowfullscreen></iframe>                
+                </div>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Other stuff</h2>
+                <p>Lorem Impusm blah blah blah
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-trowel-bricks"></i>
+                <h2>Puzzle Design</h2>
+                <p>Designed puzzles
+                </p>
+                <img src="images/background-snapstop.png" class="logo">
+                <a href="#">Learn More</a>
+            </div>               
+        </div>
+    </div>
+ </div>
+     <!-- COPYRIGHT-->
+      <div class="copyright">
+        <p>COPYRIGHT © PIOTR GNACEK</p>
+      </div>
+</div>
+
+<script>
+    // TAB CONTENT SHOW SCRIPT
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    // SIDE MENU SCRIPT
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    } 
+</script>
+</body>
+</html>
