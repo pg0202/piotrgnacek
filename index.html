@@ -23,7 +23,7 @@
         <!--NAV BAR -->     
         <nav>
             <!-- <img src="images/logo.png" class="logo"> -->
-            <H1>PIOTR GNACEK</H1>
+            <a href="index.html" class="header-logo">PIOTR GNACEK</a>
             <ul id="sidemenu">
                 <li><a href="index.html#header">Home</a></li>
                 <li><a href="index.html#showcase">Portfolio</a></li>                
@@ -61,7 +61,8 @@
             </a>
             <div class="showcase-content">
                 <h3>Snapstop</h3>
-                <p>Created and designed a first person puzzle game</p>
+                <p>Independitely created a first person puzzle game in Unreal Engine 5 using Blueprints and C++. Used game design theory to create compelling level design that teaches the player.
+<br>  <br>The game was showcased in Game Republic 2025.</p>
                 <div class="showcase-tags">
                     <span class="tag">Solo Project</span>
                     <span class="tag">Unreal Engine 5.4</span>
@@ -87,7 +88,8 @@
             </a>
             <div class="showcase-content">
                 <h3>Puntball</h3>
-                <p>Made a 4 player coop split-screen sports game</p>
+                <p>Independently created a competitive split-screen 4 player first person sports game in Unreal Engine 5 using Blueprints and C++.
+<br> <br>The game was showcased in Game Republic 2024.</p>
                 <div class="showcase-tags">
                     <span class="tag">Solo Project</span>
                     <span class="tag">Unreal Engine 5.4</span>
@@ -113,7 +115,8 @@
             </a>
             <div class="showcase-content">
                 <h3>MEAT</h3>
-                <p>MEAT is a fast food, burger restaurant, simulator, where the player's must work together, to create a plethora of recipes, for a plethora of customers. The game features many ingredients and tasks for the players to complete! Cant they satisfy all the customers, or will they fall, victims of ravenous reviewer?</p>
+                <p>Worked in a team of 5 to create a coop 4 player fast food simulator with online support. Contributed and set up the games underlying systems and created 3D assets for the project. 
+<br> <br>The game was showcased in Game Republic 2025.</p>
                 <div class="showcase-tags">
                     <span class="tag">Team Project</span>
                     <span class="tag">University</span>
@@ -347,7 +350,7 @@
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-        msg.innerHTML = "Message Sent Sucessfully"
+        msg.innerHTML = "Message Sent Successfully"
 
         setTimeout(function(){
             msg.innerHTML = ""
