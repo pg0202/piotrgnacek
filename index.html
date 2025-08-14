@@ -34,14 +34,14 @@
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Unreal Engine Game Designer</p>
-            <h1 id="typewriter-heading" data-text="Hi, I'm <span>Piotr Gnacek</span><br>- Unreal Engine Game Developer"></h1>
+            <p>Unreal Engine Game Developer</p>
+            <h1 id="typewriter-heading" data-text="Hi, I'm <span>Piotr Gnacek</span><br>Unreal Engine Game Developer"></h1>
         </div>
     </div>
 </div>
  <!-- SHOWCASE PORTFOLIO -->
 <section id="showcase">
-    <h1 class="section-title">Projects I've worked on</h1>
+    <h1 class="section-title">Projects I've worked on: </h1>
     <div class="mobile_padding">
     <div class="showcase-grid">
 
@@ -100,7 +100,7 @@
         </div> 
         
         <div class="showcase-item fade-in">
-            <a href="portfolio-puntball.html">
+            <a href="portfolio-meat.html">
             <div class="showcase-image">
                 <img src="images/work/meatgame/meat-cover.png" class="video-thumbnail">
                 <div class="video-overlay">
@@ -127,7 +127,7 @@
         </div>
 
         <div class="showcase-item fade-in">
-            <a href="portfolio-puntball.html">
+            <a href="portfolio-angler.html">
             <div class="showcase-image">
                 <img src="images/work/angler/anglercover.png" class="video-thumbnail">
                 <div class="video-overlay">
@@ -142,7 +142,7 @@
             </a>
             <div class="showcase-content">
                 <h3>ANGLER</h3>
-                <p>Created a horror game where you drive a submarine in 2 weeks for a game jam.</p>
+                <p>Created a horror game where you drive a submarine in 2 weeks for a game jam. <br> </br>The game received 5th place in the jam</p>
                 <div class="showcase-tags">
                     <span class="tag">Solo Project</span>
                     <span class="tag">Game Jam</span>                    
@@ -153,7 +153,7 @@
         </div> 
         
         <div class="showcase-item fade-in">
-            <a href="portfolio-puntball.html">
+            <a href="portfolio-cocktail.html">
             <div class="showcase-image">
                 <img src="images/work/cocktail-c/cocktail-c-cover.png" class="video-thumbnail">
                 <div class="video-overlay">
@@ -168,12 +168,11 @@
             </a>
             <div class="showcase-content">
                 <h3>Cocktail Connections</h3>
-                <p>We (Me, Joel, George, Piotr and Sahr, all linked below if applicable) created this game over 5 days for a game jam hosted by our University, UCLeeds, with the theme "The Power of Connection", in this case being human emotional connection. This game got us first place and was the initial stepping stone to help us develop our style as a group.</p>
+                <p>Worked in a team of 5 over 5 days for a game jam hosted by our University, UCLeeds, with the theme "The Power of Connection", in this case being human emotional connection. <br> </br> The game received first place</p>
                 <div class="showcase-tags">
                     <span class="tag">Team Project</span>
                     <span class="tag">Unreal Engine 5.4</span>
                     <span class="tag">Blueprints</span>
-                    <span class="tag">C++</span>
                 </div>
             </div>
         </div>    
@@ -260,7 +259,7 @@
                     <ul>
                         <li><span>Unreal Engine Programming</span><br>Building systems for immersive games and interactive experiences using Blueprints and C++.</li>
                         <li><span>User Interface/User Experience </span><br>Setting up and creating scalable user interfaces in Unreal Engine using UMG.</li>
-                        <li><span>3D Modeling (Basic)</span><br> Able to create and use simple models when needed for solo projects using Blender.</li>
+                        <li><span>3D Modeling (Blender)</span><br> Able to create and use simple models when needed for solo projects using Blender.</li>
                     </ul>
                 </div>
                 <!-- Experience --> 
@@ -291,7 +290,7 @@
                         <a href="https://www.linkedin.com/in/piotr-gnacek-bbb713312/"><i class="fa-brands fa-linkedin"></i></i></a>
                         <a href="https://waterlemon0.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
                     </div>
-                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/PiotrGnacekResume.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -414,6 +413,21 @@
 
     typeNode();
     });
+</script>
+
+
+<!-- Remove video for mobile -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Detect mobile using screen width (simple) 
+    // You can also check userAgent for more precision
+    if (window.innerWidth <= 768) { 
+        var video = document.getElementById("bg-video");
+        if (video) {
+            video.parentNode.removeChild(video); // Removes video element completely
+        }
+    }
+});
 </script>
 
 </body>
