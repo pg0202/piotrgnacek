@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piotr Gnacek Porfolio</title>
+    <title>MEAT | Piotr Gnacek Portfolio</title>
+    <meta name="description" content="MEAT is a 4 player co-op fast food restaurant simulator built by a 5-person university team in Unreal Engine 5.">
+    <meta property="og:title" content="MEAT | Piotr Gnacek Portfolio">
+    <meta property="og:description" content="A team-built co-op fast food simulator made in Unreal Engine 5, showcased at Game Republic 2025.">
+    <meta property="og:image" content="images/work/meatgame/meat-cover.png">
+    <link rel="icon" type="image/png" href="images/user2.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,31 +17,21 @@
 <body>
 <!-- Hi! Thank you for checking out my portfolio website! -->
 <div id="header" class="short" style="--header-bg: url(images/work/meatgame/meat-cover.png);">
-     <!-- <video autoplay muted loop playsinline id="bg-video">
-        <source src="images/work/snapstop/trailer.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>    -->
-
     <div class="gradient-overlay-blur"></div> 
 
     <div class="container">
         <!--NAV BAR -->     
         <nav>
-            <!-- <img src="images/logo.png" class="logo"> -->
             <a href="index.html" class="header-logo">PIOTR GNACEK</a>
             <ul id="sidemenu">
                 <li><a href="index.html#header">Home</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>                
+                <li><a href="index.html#showcase">Portfolio</a></li>                
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
                 <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <!-- <div class="header-text">
-            <p>Solo Project</p>
-            <h1>Snapstop</h1>
-        </div> -->
     </div>
 </div>
 <!-- ABOUT -->
@@ -44,8 +39,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/work/meatgame/meat-cover.png">
-                <!-- <a href="https://waterlemon0.itch.io/angler" class="btn"><i class="fa-brands fa-itch-io"></i> PLAY HERE</a> -->
+                <img src="images/work/meatgame/meat-cover.png" alt="MEAT key art">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">MEAT</h1>
@@ -54,6 +48,7 @@
                     <p class="tab-links active-link" onclick="opentab('info')">Info</p>
                     <p class="tab-links" onclick="opentab('goals')">Goals & Targets</p>
                     <p class="tab-links" onclick="opentab('outcomes')">Learning Outcomes</p>
+                    <p class="tab-links" onclick="opentab('reflection')">Reflection</p>
                 </div>
                 <!-- Info --> 
                 <div class="tab-contents active-tab" id="info">
@@ -77,6 +72,14 @@
                     <ul>
                         <li><span>Team Collaboration</span><br>Integrated assets and mechanics with a small team.</li>
                         <li><span>Rapid Prototyping</span><br>Balanced interactive systems under tight deadlines.</li>
+                        <li><span>Online Networking</span><br>Gained experience getting cooperative gameplay working reliably over online play, not just local split-screen.</li>
+                    </ul>
+                </div>
+                <!-- Reflection -->
+                <div class="tab-contents" id="reflection">
+                    <ul>
+                        <li><span>What Worked</span><br>Splitting ownership so I could focus on underlying systems and 3D assets in parallel with teammates on other stations kept the year-long project moving without bottlenecking on one person.</li>
+                        <li><span>What I'd Explore Next</span><br>I'd like to revisit the recipe/ingredient data assets to make it easier for non-programmers on the team to add new menu items without touching Blueprints logic directly.</li>
                     </ul>
                 </div>
             </div>
@@ -88,9 +91,11 @@
     <div class="container">
         <h1 class="sub-title">My Contributions</h1>
         <div class="contributions-list">
+            <ul>
             <li>Designed and implemented the game’s underlying systems, including item assets, cooking processes, and split screen gameplay.</li>
             <li>Created a variety of 3D assets for kitchen equipment and props to bring the environment to life.</li>
-            <li>Collaborated closely with the team to integrate assets and systems into gameplay, ensuring smooth co-op functionality.</li>       
+            <li>Collaborated closely with the team to integrate assets and systems into gameplay, ensuring smooth co-op functionality.</li>
+            </ul>
         </div>
     </div>
  </div>

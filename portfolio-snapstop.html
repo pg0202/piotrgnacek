@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piotr Gnacek Porfolio</title>
+    <title>Snapstop | Piotr Gnacek Portfolio</title>
+    <meta name="description" content="Snapstop is a first person puzzle game built solo in Unreal Engine 5, where players pause objects in time with a camera to solve environmental puzzles.">
+    <meta property="og:title" content="Snapstop | Piotr Gnacek Portfolio">
+    <meta property="og:description" content="A solo-developed Unreal Engine 5 puzzle game about pausing objects in time with a camera.">
+    <meta property="og:image" content="images/work/snapstop/snapstop-cover.png">
+    <link rel="icon" type="image/png" href="images/user2.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,31 +17,21 @@
 <body>
 <!-- Hi! Thank you for checking out my portfolio website! -->
 <div id="header" class="short" style="--header-bg: url(images/background-snapstop.png);">
-     <!-- <video autoplay muted loop playsinline id="bg-video">
-        <source src="images/work/snapstop/trailer.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>    -->
-
     <div class="gradient-overlay-blur"></div> 
 
     <div class="container">
         <!--NAV BAR -->     
         <nav>
-            <!-- <img src="images/logo.png" class="logo"> -->
             <a href="index.html" class="header-logo">PIOTR GNACEK</a>
             <ul id="sidemenu">
                 <li><a href="index.html#header">Home</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>                
+                <li><a href="index.html#showcase">Portfolio</a></li>                
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
                 <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <!-- <div class="header-text">
-            <p>Solo Project</p>
-            <h1>Snapstop</h1>
-        </div> -->
     </div>
 </div>
 <!-- ABOUT -->
@@ -44,45 +39,37 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/work/snapstop/snapstop-cover.png">
-                <a href="https://waterlemon0.itch.io/snapstop" class="btn"><i class="fa-brands fa-itch-io"></i> PLAY HERE</a>
+                <img src="images/work/snapstop/snapstop-cover.png" alt="Snapstop key art">
+                <div class="btn-row">
+                    <a href="https://waterlemon0.itch.io/snapstop" class="btn"><i class="fa-brands fa-itch-io"></i> PLAY HERE</a>
+                </div>
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">Snapstop</h1>
                 <p>Snapstop is a first person puzzle game where you solve puzzles with the help of a camera that can pause objects in time. 
-                    Pause doors, buttons and physics objects in order to solve puzzles.</p>
+                    Pause doors, buttons and physics objects in order to solve puzzles. The game is a submission to itch.io's "Continue Your Game" jam and is rated 5.0 out of 5 by early players.</p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('info')">Info</p>
-                    <!-- <p class="tab-links" onclick="opentab('media')">Media</p> -->
                     <p class="tab-links" onclick="opentab('goals')">Goals & Targets</p>
                     <p class="tab-links" onclick="opentab('outcomes')">Learning Outcomes</p>
+                    <p class="tab-links" onclick="opentab('feedback')">Player Reception</p>
                 </div>
                 <!-- Info --> 
                 <div class="tab-contents active-tab" id="info">
                     <ul>
                         <li><span><i class="fa-solid fa-user"></i> Role</span><br>Solo Developer</li>
                         <li><span><i class="fa-solid fa-users"></i> Team Size</span><br>1</li>
-                        <li><span><i class="fa-solid fa-clock"></i> Timeframe</span><br>One Month</li>
+                        <li><span><i class="fa-solid fa-clock"></i> Timeframe</span><br>One Month initial build, with ongoing post-launch updates</li>
                         <li><span><i class="fa-solid fa-screwdriver-wrench"></i> Software Used</span><br>Unreal Engine 5.4 (Blueprints + C++), Blender</li>
+                        <li><span><i class="fa-solid fa-arrows-rotate"></i> Status</span><br>In active development, now on Version 3, with new puzzles and quality-of-life improvements added since launch</li>
                     </ul>
                 </div>
-                <!-- Media --> 
-                <!-- <div class="tab-contents" id="media">
-                    <ul>
-                        <li><span>Trailer</span><br>Personal Projects</li>
-                        <video playsinline controls id="media-video">
-                            <source src="images/work/snapstop/trailer.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>   
-                        <li><span>2021 - Current</span><br>Personal Projects</li>
-                    </ul>
-                </div> -->
                 <!-- Goals --> 
                 <div class="tab-contents" id="goals">
                     <ul>
                         <li><span>Unique Mechanics</span><br>Create a puzzle system based on pausing objects in time.</li>
                         <li><span>Player Experimentation</span><br>Encourage creative problem-solving through interaction.</li>
-                        <li><span>Progressive Challenge</span><br>Gradually increase puzzle complexity.</li>
+                        <li><span>Progressive Challenge</span><br>Gradually increase puzzle complexity so early levels teach the mechanic before harder levels test it.</li>
                     </ul>
                 </div>
                 <!-- Outcomes --> 
@@ -91,6 +78,14 @@
                         <li><span>Time Management</span><br>Created the initial vertical slice within 1 month</li>
                         <li><span>Animation Blueprints</span><br>Learned how to set up animation blueprints to animate first person meshes</li>
                         <li><span>Options Menu</span><br>Learned how to create scalable widgets to easily make Setting/Options menus. Utilised C++ to properly save settings</li>
+                        <li><span>Designing From Feedback</span><br>Learned to prioritise and action real player feedback post-launch, turning comments into a concrete update roadmap across three devlogs.</li>
+                    </ul>
+                </div>
+                <!-- Feedback -->
+                <div class="tab-contents" id="feedback">
+                    <ul class="feedback-list">
+                        <li><span>Puzzle design and pacing</span>Players have praised how the early levels ramp up gradually, teaching the pause mechanic before the harder puzzles test it. One reviewer said they'd happily pay for a full version on Steam.</li>
+                        <li><span>Iterating with the community</span>Community suggestions around interaction clarity fed directly into later updates, including a UI/UX pass on the camera view. The game has been reworked and expanded across three devlogs since launch as a result.</li>
                     </ul>
                 </div>
             </div>
@@ -101,47 +96,15 @@
  <div id="contributions">
     <div class="container">
         <h1 class="sub-title">My Contributions</h1>
-        <!-- <div class="contributions-list">
-            <div>
-                <i class="fa-solid fa-file-code"></i>
-                <h2> Pause Mechanic</h2>
-                <p>Created pause mechanic using Blueprints</p>
-                <div class="iframe-wrapper">
-                    <iframe src="https://blueprintue.com/render/jei2uabg/" scrolling="no" allowfullscreen></iframe>                   
-                </div>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-palette"></i>
-                <h2>Art</h2>
-                <p>did artp</p>
-                <div class="iframe-wrapper">
-                    <iframe src="https://blueprintue.com/render/hvwqwcll/" scrolling="no" allowfullscreen></iframe>                
-                </div>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-gamepad"></i>
-                <h2>Other stuff</h2>
-                <p>Lorem Impusm blah blah blah
-                </p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-trowel-bricks"></i>
-                <h2>Puzzle Design</h2>
-                <p>Designed puzzles
-                </p>
-                <img src="images/background-snapstop.png" class="logo">
-                <a href="#">Learn More</a>
-            </div>               
-        </div> -->
         <div class="contributions-list">
+        <ul>
         <li>Designed and implemented the core time-pausing camera mechanic, ensuring it worked seamlessly with doors, buttons, and physics-based objects.</li>
         <li>Created and scripted puzzle levels, balancing difficulty to encourage creative problem-solving.</li>
         <li>Built interactive systems (door triggers, pressure plates, object physics) to work dynamically with the camera mechanic.</li>
         <li>Designed player interaction systems and mapped intuitive controls.</li>
         <li>Playtested and iterated on puzzle design to improve clarity, flow, and player engagement.</li>
+        <li>Continued supporting the game post-release, publishing three devlogs and shipping a Version 3 update with new puzzles based directly on community feedback.</li>
+        </ul>
         </div>
     </div>
  </div>

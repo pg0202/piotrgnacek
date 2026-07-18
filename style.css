@@ -294,6 +294,7 @@ nav ul li a:hover::after{
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+    flex-wrap: wrap;
 }
 .tab-links{
     margin-right: 50px;
@@ -500,6 +501,15 @@ nav ul li a:hover::after{
 .btn:hover{
     background: var(--color-primary);
 }
+.btn-row{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn-row .btn{
+    margin: 20px 0;
+}
 /* CONTACT */
 .contact-left{
     flex-basis: 35%;
@@ -571,9 +581,25 @@ form .btn2{
     display: block;
 }
 
-
-
-
+/* COMMUNITY FEEDBACK */
+.feedback-list{
+    margin-top: 15px;
+}
+.feedback-list li{
+    list-style: none;
+    background: var(--color-bg-alt);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.feedback-list li span{
+    color: var(--color-primary-light);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+}
 
 /* CONTRIBUTIONS */
 #contributions{
@@ -612,6 +638,13 @@ form .btn2{
 .contributions-list div:hover{
     background: var(--color-bg);
     /* transform: translateY(-10px); */
+}
+.contributions-list ul{
+    list-style: none;
+}
+.contributions-list ul li{
+    margin-bottom: 12px;
+    line-height: 1.6;
 }
 .iframe-wrapper {
     position: relative;

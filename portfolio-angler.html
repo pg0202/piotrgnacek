@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piotr Gnacek Porfolio</title>
+    <title>ANGLER | Piotr Gnacek Portfolio</title>
+    <meta name="description" content="ANGLER is a 2-week solo game jam horror game about piloting a submarine besieged by a monstrous anglerfish, built in Unreal Engine 5.">
+    <meta property="og:title" content="ANGLER | Piotr Gnacek Portfolio">
+    <meta property="og:description" content="A solo-developed submarine horror game made in 2 weeks for a game jam, placing 5th.">
+    <meta property="og:image" content="images/work/angler/anglercover.png">
+    <link rel="icon" type="image/png" href="images/user2.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,31 +17,21 @@
 <body>
 <!-- Hi! Thank you for checking out my portfolio website! -->
 <div id="header" class="short" style="--header-bg: url(images/work/angler/angler1.png);">
-     <!-- <video autoplay muted loop playsinline id="bg-video">
-        <source src="images/work/snapstop/trailer.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>    -->
-
     <div class="gradient-overlay-blur"></div> 
 
     <div class="container">
         <!--NAV BAR -->     
         <nav>
-            <!-- <img src="images/logo.png" class="logo"> -->
             <a href="index.html" class="header-logo">PIOTR GNACEK</a>
             <ul id="sidemenu">
                 <li><a href="index.html#header">Home</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>                
+                <li><a href="index.html#showcase">Portfolio</a></li>                
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
                 <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <!-- <div class="header-text">
-            <p>Solo Project</p>
-            <h1>Snapstop</h1>
-        </div> -->
     </div>
 </div>
 <!-- ABOUT -->
@@ -44,8 +39,10 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/work/angler/anglercover.png">
-                <a href="https://waterlemon0.itch.io/angler" class="btn"><i class="fa-brands fa-itch-io"></i> PLAY HERE</a>
+                <img src="images/work/angler/anglercover.png" alt="ANGLER key art">
+                <div class="btn-row">
+                    <a href="https://waterlemon0.itch.io/angler" class="btn"><i class="fa-brands fa-itch-io"></i> PLAY HERE</a>
+                </div>
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">ANGLER</h1>
@@ -54,14 +51,17 @@
                     <p class="tab-links active-link" onclick="opentab('info')">Info</p>
                     <p class="tab-links" onclick="opentab('goals')">Goals & Targets</p>
                     <p class="tab-links" onclick="opentab('outcomes')">Learning Outcomes</p>
+                    <p class="tab-links" onclick="opentab('jam')">Jam Brief</p>
+                    <p class="tab-links" onclick="opentab('reflection')">Reflection</p>
                 </div>
                 <!-- Info --> 
                 <div class="tab-contents active-tab" id="info">
                     <ul>
                         <li><span><i class="fa-solid fa-user"></i> Role</span><br>Solo Developer</li>
                         <li><span><i class="fa-solid fa-users"></i> Team Size</span><br>1</li>
-                        <li><span><i class="fa-solid fa-clock"></i> Timeframe</span><br>2 Weeks</li>
+                        <li><span><i class="fa-solid fa-clock"></i> Timeframe</span><br>2 Weeks and 2 Days</li>
                         <li><span><i class="fa-solid fa-screwdriver-wrench"></i> Software Used</span><br>Unreal Engine 5.4 (Blueprints), Blender</li>
+                        <li><span><i class="fa-solid fa-trophy"></i> Result</span><br>5th Place, Pizza Doggy's Horror Jam #1</li>
                     </ul>
                 </div>
                 <!-- Goals --> 
@@ -74,9 +74,24 @@
                 <!-- Outcomes --> 
                 <div class="tab-contents" id="outcomes">
                     <ul>
-                        <li><span>Interactive Systems</span><br>mplemented levers, throttle, and ballast</li>
+                        <li><span>Interactive Systems</span><br>Implemented levers, throttle, and ballast.</li>
                         <li><span>Tension & Pacing</span><br>Learned to design escalating stress and stakes through gameplay.</li>
                         <li><span>Rapid Prototyping</span><br>Delivered a full playable horror game in just over 2 weeks.</li>
+                    </ul>
+                </div>
+                <!-- Jam Brief -->
+                <div class="tab-contents" id="jam">
+                    <ul>
+                        <li><span>Themes Used</span><br>"The fish grows when it's fed, but kills when it isn't" and "It's in the walls."</li>
+                        <li><span>Diversifiers Used</span><br>Included a hidden secret/Easter egg, and made the environment progress only vertically.</li>
+                        <li><span>Context</span><br>This was my first attempt at making a horror game, built specifically to stretch into a new genre under jam time pressure.</li>
+                    </ul>
+                </div>
+                <!-- Reflection -->
+                <div class="tab-contents" id="reflection">
+                    <ul>
+                        <li><span>What Worked</span><br>Tying the horror escalation directly to a resource-management loop (feed the fish vs. strain the sub) gave the tension a clear, systemic driver rather than relying purely on jump scares.</li>
+                        <li><span>What I'd Explore Next</span><br>With more time I'd add more variety to the failure states and expand the sub's system-repair loop so returning players have more than one viable strategy for surviving the ascent.</li>
                     </ul>
                 </div>
             </div>
@@ -88,11 +103,13 @@
     <div class="container">
         <h1 class="sub-title">My Contributions</h1>
         <div class="contributions-list">
+            <ul>
             <li>Designed and implemented all core mechanics, including submarine navigation, system repairs, and the feeding/anger behavior of the anglerfish.</li>
             <li>Created atmospheric level design with claustrophobic spaces to heighten tension.</li>
-            <li>Built interactive control systems (throttle, ballast, levers) for immersive simulation-style gameplay..</li>
+            <li>Built interactive control systems (throttle, ballast, levers) for immersive simulation-style gameplay.</li>
             <li>Integrated horror pacing, balancing resource management with environmental storytelling.</li>
-            <li>Developed AI for the anglerfish and its spawn, including growth and aggression stages.</li>       
+            <li>Developed AI for the anglerfish and its spawn, including growth and aggression stages.</li>
+            </ul>
         </div>
     </div>
  </div>

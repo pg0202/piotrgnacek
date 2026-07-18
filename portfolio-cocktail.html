@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piotr Gnacek Porfolio</title>
+    <title>Cocktail Connections | Piotr Gnacek Portfolio</title>
+    <meta name="description" content="Cocktail Connections is a narrative bar-tending game built in 5 days by a 5-person team for a UCLeeds game jam themed around human connection. 1st place winner.">
+    <meta property="og:title" content="Cocktail Connections | Piotr Gnacek Portfolio">
+    <meta property="og:description" content="A 5-day game jam project built in Unreal Engine 5, winner of first place at UCLeeds's 'Power of Connection' jam.">
+    <meta property="og:image" content="images/work/cocktail-c/cocktail-c-cover.png">
+    <link rel="icon" type="image/png" href="images/user2.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,31 +17,21 @@
 <body>
 <!-- Hi! Thank you for checking out my portfolio website! -->
 <div id="header" class="short" style="--header-bg: url(images/work/cocktail-c/cocktail-c-cover.png);">
-     <!-- <video autoplay muted loop playsinline id="bg-video">
-        <source src="images/work/snapstop/trailer.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>    -->
-
     <div class="gradient-overlay-blur"></div> 
 
     <div class="container">
         <!--NAV BAR -->     
         <nav>
-            <!-- <img src="images/logo.png" class="logo"> -->
             <a href="index.html" class="header-logo">PIOTR GNACEK</a>
             <ul id="sidemenu">
                 <li><a href="index.html#header">Home</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>                
+                <li><a href="index.html#showcase">Portfolio</a></li>                
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
                 <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <!-- <div class="header-text">
-            <p>Solo Project</p>
-            <h1>Snapstop</h1>
-        </div> -->
     </div>
 </div>
 <!-- ABOUT -->
@@ -44,8 +39,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/work/cocktail-c/cocktail-c-cover.png">
-                <!-- <a href="https://waterlemon0.itch.io/angler" class="btn"><i class="fa-brands fa-itch-io"></i> PLAY HERE</a> -->
+                <img src="images/work/cocktail-c/cocktail-c-cover.png" alt="Cocktail Connections key art">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">Cocktail Connections</h1>
@@ -54,6 +48,7 @@
                     <p class="tab-links active-link" onclick="opentab('info')">Info</p>
                     <p class="tab-links" onclick="opentab('goals')">Goals & Targets</p>
                     <p class="tab-links" onclick="opentab('outcomes')">Learning Outcomes</p>
+                    <p class="tab-links" onclick="opentab('reflection')">Reflection</p>
                 </div>
                 <!-- Info --> 
                 <div class="tab-contents active-tab" id="info">
@@ -62,6 +57,7 @@
                         <li><span><i class="fa-solid fa-users"></i> Team Size</span><br>5</li>
                         <li><span><i class="fa-solid fa-clock"></i> Timeframe</span><br>5 days</li>
                         <li><span><i class="fa-solid fa-screwdriver-wrench"></i> Software Used</span><br>Unreal Engine 5.4 (Blueprints)</li>
+                        <li><span><i class="fa-solid fa-trophy"></i> Result</span><br>1st Place, UCLeeds "Power of Connection" Jam</li>
                     </ul>
                 </div>
                 <!-- Goals --> 
@@ -80,6 +76,13 @@
                         <li><span>Team Collaboration</span><br>Worked effectively in a small, focused team.</li>
                     </ul>
                 </div>
+                <!-- Reflection -->
+                <div class="tab-contents" id="reflection">
+                    <ul>
+                        <li><span>What Worked</span><br>Building the drink-crafting system on data assets from day one meant designers and writers could tune recipes and dialogue without needing a programmer in the loop, which mattered enormously with only 5 days on the clock.</li>
+                        <li><span>What I'd Explore Next</span><br>I'd like to extend the crafting data-asset approach into a small in-editor tool, so non-programmers on the team could add new drinks and reactions even faster during a jam.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -89,9 +92,11 @@
     <div class="container">
         <h1 class="sub-title">My Contributions</h1>
         <div class="contributions-list">
+            <ul>
             <li>Designed and implemented the drink crafting system, using data assets, allowing multiple ingredients to be combined into unique beverages.</li>
             <li>Collaborated with designers and artists to integrate the system smoothly into the overall game loop.</li>
-            <li>Assisted in rapid prototyping and iteration to meet the 5-day deadline.</li>      
+            <li>Assisted in rapid prototyping and iteration to meet the 5-day deadline.</li>
+            </ul>
         </div>
     </div>
  </div>
